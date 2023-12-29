@@ -1,8 +1,9 @@
-import { Inter } from "next/font/google";
+import { Archivo, Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
+const archivo = Archivo({ subsets: ["latin"] });
 
 export const metadata = {
 	title: "Styka Studio",
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<Header />
+				<Navbar />
 				{children}
 			</body>
 		</html>
